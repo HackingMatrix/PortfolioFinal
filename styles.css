@@ -1,0 +1,378 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-bottom: 50px;
+}
+
+body::-webkit-scrollbar{
+    width: 4px;
+    background-color: #414141;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #666666;
+    border-radius: 4px;
+    height: 50px;
+}
+
+.scroll-content {
+    overflow-x: hidden; 
+}
+
+.image_hero {
+    width: 410px;
+    right: 550px;
+    top: 100px;
+}
+
+
+.image_hero2 {
+    position: absolute;
+    width: 410px;
+top: 95px; 
+left: 50%; 
+transform: translateX(-50%);
+}
+
+.backgroundDev{
+    background-image: url(images/web-development-banner.svg);
+    background-size: cover; 
+}
+
+.backgroundDesn{
+    background-image: url(images/11-Best-Web-Design-Companies-in-India.svg);
+    background-size: cover; 
+}
+
+.backgroundMobile{
+    background-image: url(images/web-design-dark-mode.svg);
+    background-size: cover; 
+}
+
+.blip{
+    margin-left: 300px;
+}
+
+.height_fixed {
+    height: 51px;
+}
+
+/* styles.css */
+
+.shadow-inner {
+    box-shadow: inset 0 10px 14px 0 rgb(0 0 0 / 0.05);
+}
+
+.spinAnimate {
+    animation: spin 5s linear infinite;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 50%;
+    border-top: 3px solid rgba(69, 69, 69, 0);
+    border-bottom: 3px solid rgba(128, 128, 128, 0);
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    top: calc(50% - 185px); /* La mitad de la altura del círculo */
+    left: calc(57% - 185px); /* La mitad del ancho del círculo */
+}
+/* .scroll-container {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.scroll-content::-webkit-scrollbar {
+    width: 3px;
+}
+
+.scroll-content::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.scroll-content::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+} */
+
+.fade-in-text {
+    opacity: 0;
+    animation: fadeIn 5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-image {
+    opacity: 0;
+    animation: fadeIn 5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: .75;
+    }
+}
+
+.cursor {
+    display: inline-block;
+    animation: cursor-blink 0.8s infinite;
+}
+
+@keyframes cursor-blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.growing-hr {
+    width: 0;
+    border: none;
+    border-top: 2px solid #a26e3c;
+    animation: grow 3s ease-out forwards;
+}
+
+@keyframes grow {
+    to {
+        width: 350px;
+    }
+}
+
+.menu-icon {
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 70px;
+    transition: right 0.5s;
+}
+
+.menu-icon.moved {
+    right: calc(50% - 12px);
+    background-color: #48484881;
+    border: 1.5px solid #a26d3c85;
+    border-radius: 1px;
+    border-color: #a26d3c85;
+    transform: rotate(45deg);
+    position: fixed
+    
+}
+
+.menu-icon.vertical {
+    background-color: #48484881;
+    border: 1.5px solid #a26d3c85;
+    border-radius: 1px;
+    border-color: #a26d3c85;
+    transform: rotate(45deg);
+    position: fixed
+    
+}
+
+.fade-in-up.blinking-image {
+    animation: fade-in-up 1.9s ease-out, blink 2.5s infinite; /* Combina las dos animaciones */
+}
+
+.fade-in-right {
+    animation: fade-in-right 1.9s ease-out;
+}
+
+.fade-in-left {
+    animation: fade-in-left 1.9s ease-out;
+}
+
+.fade-in-left-bar {
+    animation: fade-in-left-bar .5s ease-out;
+}
+
+.fade-in-left-menu {
+    animation: fade-in-left-bar .2s ease-out;
+}
+
+.fade-out {
+    animation: fade-out .3s ease-out;
+}
+
+.fade-and-slide {
+    
+    width: 0px;
+    transition: width 1s ease; /* Transición para opacidad y transformación */
+}
+
+.fade-and-slide.active {
+    width: 60px;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: .25; /* La imagen está oculta al principio y al final */
+    }
+    50% {
+        opacity: .60; /* La imagen es visible a la mitad de la animación */
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(65px) translateX(-50%); /* Empieza desde abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) translateX(-50%); /* Llega a su posición normal */
+    }
+}
+
+@keyframes fade-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(-65px); /* Empieza desde abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Llega a su posición normal */
+    }
+}
+
+@keyframes fade-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(65px); /* Empieza desde abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Llega a su posición normal */
+    }
+}
+
+@keyframes fade-in-left-menu {
+    from {
+        opacity: 0;
+        transform: translateX(65px); /* Empieza desde abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Llega a su posición normal */
+    }
+}
+
+
+@keyframes fade-in-left-bar {
+    from {
+        opacity: 0;
+        transform: translateX(100%); /* Empieza desde abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Llega a su posición normal */
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+  @media screen and (min-width: 1px) and (max-width: 645px) {
+    
+   
+    .button_CV {
+      margin-left: auto;
+    }
+    .growing-hr {
+        width: 0;
+        border: none;
+        border-top: 2px solid #a26e3c;
+        animation: grow 3s ease-out forwards;
+    }
+
+    @keyframes grow {
+        to {
+            width: 230px;
+        }
+    }
+    
+  }
+
+  @media screen and (min-width: 880px) and (max-width: 1280px) {
+
+    .image_hero {
+        width: 410px;
+        right: 15vw;
+        top: 5vh;
+    }
+    
+    .image_hero2 {
+        position: absolute;
+        width: 410px;
+    top: 200px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    }
+
+    .fade-in-up.blinking-image {
+        animation: fade-in-up 1.9s ease-out, blink 2.5s infinite; /* Combina las dos animaciones */
+    }
+    
+    @keyframes blink {
+        0%, 100% {
+            opacity: .20; /* La imagen está oculta al principio y al final */
+        }
+        50% {
+            opacity: .20; /* La imagen es visible a la mitad de la animación */
+        }
+    }
+    
+    /* .button_CV {
+      margin-left: auto;
+    }
+    .growing-hr {
+        width: 0;
+        border: none;
+        border-top: 2px solid #a26e3c;
+        animation: grow 3s ease-out forwards;
+    }
+
+    @keyframes grow {
+        to {
+            width: 230px;
+        }
+    } */
+    
+  }
+
+  @media screen and (min-width: 1536px) and (max-width: 2700px) {
+   
+/*     .button_CV {
+      margin-left: auto;
+    }
+    .growing-hr {
+        width: 0;
+        border: none;
+        border-top: 2px solid #a26e3c;
+        animation: grow 3s ease-out forwards;
+    }
+
+    @keyframes grow {
+        to {
+            width: 230px;
+        }
+    }
+     */
+  }
