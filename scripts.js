@@ -228,3 +228,29 @@ function toggleList(id) {
       button.textContent = '-';
     }
   }
+
+  document.getElementById("contactForm").addEventListener("submit", async (e) => {
+    e.preventDefault(); // Evita la recarga de la página
+
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("http://localhost:3000/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        alert("Correo enviado correctamente.");
+      } else {
+        alert("Error al enviar el correo.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Error al enviar el correo.");
+    }
+  });
