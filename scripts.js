@@ -235,22 +235,24 @@ function toggleList(id) {
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
 
-    try {
-      const response = await fetch("http://localhost:3000/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+    console.log("Datos a enviar:", data); // Verifica que se incluya el campo "numero"
 
-      if (response.ok) {
-        alert("Correo enviado correctamente.");
-      } else {
-        alert("Error al enviar el correo.");
-      }
+    try {
+        const response = await fetch("https://cute-mousse-9ff468.netlify.app/send-email", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        });
+
+        if (response.ok) {
+            alert("Correo enviado correctamente.");
+        } else {
+            alert("Error al enviar el correo.");
+        }
     } catch (error) {
-      console.error("Error:", error);
-      alert("Error al enviar el correo.");
+        console.error("Error:", error);
+        alert("Error al enviar el correo.");
     }
-  });
+});

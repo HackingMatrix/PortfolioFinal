@@ -565,36 +565,7 @@
         <!-- Wrapper para Swiper -->
         <div class="swiper-wrapper ">
           <!-- Slide 1 -->
-          <div class="swiper-slide flex flex-col h-full items-center">
-
-
-           
-            <!-- Contenedor del iframe -->
-            <div class="flex-grow">
-              <iframe 
-                src="https://cestlavie-spa.com/" 
-                class="iframe1 rounded-lg" 
-                allowfullscreen>
-              </iframe>
-            </div>
-
-             <!-- Texto del proyecto -->
-             <div class="mb-4 flex justify-center pt-2">
-                <h3 class="text-xl font-semibold">CRM Spa C'est la vie</h3>
-               
-              </div>
-            
-             <!-- Texto del proyecto -->
-             
-             <div id="text-rotator-1" class="text-rotator relative h-10 overflow-hidden text-gray-400 text-center mt-4 text-xs md:text-lg">
-                <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">CRM system and landing page for efficient spa management.</p>
-                <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Allows reservations with a mandatory initial deposit.</p>
-                <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Integration with Stripe for secure and fast payments.</p>
-                <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Email notifications for both clients and administrators.</p>
-            </div>
-            
-              
-          </div>
+          
           
       
           <!-- Slide 2 -->
@@ -698,6 +669,32 @@
         </div>
         
         </div>
+        <div class="swiper-slide flex flex-col h-full content-center">
+
+
+           
+            <!-- Contenedor del iframe -->
+            <div class="flex justify-center text-2xl text-violet-700">
+              <a href="https://cestlavie-spa.com/"><h1>Visitar Sitio</h1></a>
+            </div>
+
+             <!-- Texto del proyecto -->
+             <div class="mb-4 flex pt-2 justify-center">
+                <h3 class="text-xl font-semibold">CRM Spa C'est la vie</h3>
+               
+              </div>
+            
+             <!-- Texto del proyecto -->
+             
+             <div id="text-rotator-1" class="text-rotator relative h-10 overflow-hidden text-gray-400 text-center mt-4 text-xs md:text-lg">
+                <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">CRM system and landing page for efficient spa management.</p>
+                <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Allows reservations with a mandatory initial deposit.</p>
+                <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Integration with Stripe for secure and fast payments.</p>
+                <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Email notifications for both clients and administrators.</p>
+            </div>
+            
+              
+          </div>
         </div>
       
         <!-- Paginación -->
@@ -788,26 +785,35 @@
             <h1 class="text-2xl">Or</h1>
         </div>
         <form id="contactForm" class=" w-3/6" action="procesar_formulario.php" method="POST">
-            <div class=" grid grid-cols-1 gap-2 md:grid-cols-2">
-            <label for="nombre" class="sr-only">Full Name</label>
-            <input class="border-2 border-white bg-slate-500 shadow-lg w-full rounded mb-2 px-4 py-2  focus:ring-cyan-500 focus:border-cyan-500" placeholder="First Name" type="text" id="nombre" name="nombre" required>
-            
-            <label for="email" class="sr-only">E-mail</label>
-            <input class="border-2 border-white bg-slate-500 shadow-lg w-full rounded mb-2 px-4 py-2  focus:ring-cyan-500 focus:border-cyan-500" placeholder="E-mail" type="email" id="email" name="email" required>
-            <label for="nombre" class="sr-only">First Name</label>
-            <input class="border-2 border-white bg-slate-500 shadow-lg w-full rounded mb-5 px-4 py-2  focus:ring-cyan-500 focus:border-cyan-500" placeholder="Last Name" type="text" id="nombre" name="nombre" required>
-            
-            <label for="email" class="sr-only">Numero</label>
-            <input class="border-2 border-white bg-slate-500 shadow-lg w-full rounded mb-5 px-4 py-2  focus:ring-cyan-500 focus:border-cyan-500" placeholder="Number" type="text" id="numero" name="numero" required>
-           </div>
+            <div class="grid grid-cols-1 gap-2 md:grid-cols-2">
+                <label for="nombre" class="sr-only">Full Name</label>
+                <input class="border-2 border-white bg-slate-500 shadow-lg w-full rounded mb-2 px-4 py-2 focus:ring-cyan-500 focus:border-cyan-500"
+                    placeholder="First Name" type="text" id="nombre" name="nombre" required>
+        
+                <label for="email" class="sr-only">E-mail</label>
+                <input class="border-2 border-white bg-slate-500 shadow-lg w-full rounded mb-2 px-4 py-2 focus:ring-cyan-500 focus:border-cyan-500"
+                    placeholder="E-mail" type="email" id="email" name="email" required>
+        
+                <label for="apellido" class="sr-only">Last Name</label>
+                <input class="border-2 border-white bg-slate-500 shadow-lg w-full rounded mb-5 px-4 py-2 focus:ring-cyan-500 focus:border-cyan-500"
+                    placeholder="Last Name" type="text" id="apellido" name="apellido" required>
+        
+                <label for="numero" class="sr-only">Numero</label>
+                <input class="border-2 border-white bg-slate-500 shadow-lg w-full rounded mb-5 px-4 py-2 focus:ring-cyan-500 focus:border-cyan-500"
+                    placeholder="Number" type="text" id="numero" name="numero" required>
+            </div>
             <div class="grid grid-cols-1 w-full justify-items-center">
                 <label for="mensaje" class="sr-only">Your Message</label>
-                <textarea placeholder="Your Message" class="border-2 border-white bg-slate-500 shadow-xl w-full h-52 rounded mb-5 px-4 py-3  focus:ring-cyan-500 focus:border-cyan-500" id="mensaje" name="mensaje" rows="4" required></textarea>
+                <textarea placeholder="Your Message"
+                    class="border-2 border-white bg-slate-500 shadow-xl w-full h-52 rounded mb-5 px-4 py-3 focus:ring-cyan-500 focus:border-cyan-500"
+                    id="mensaje" name="mensaje" rows="4" required></textarea>
                 <div class="mt-10">
-                    <button type="submit" class="w-32 shadow-lg border-2 border-orange-400 bg-white text-lg text-orange-400 px-4 py-2 rounded-md hover:bg-slate-700">Send</button>
+                    <button type="submit"
+                        class="w-32 shadow-lg border-2 border-orange-400 bg-white text-lg text-orange-400 px-4 py-2 rounded-md hover:bg-slate-700">Send</button>
                 </div>
             </div>
         </form>
+        
     </section>
     
     
