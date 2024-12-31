@@ -24,6 +24,105 @@ body::-webkit-scrollbar-thumb{
     top: 100px;
 }
 
+/* Flip container *//* Flip container *//* Flip container */
+.flip-container {
+    perspective: 1000px; /* Define la profundidad 3D */
+}
+
+.flip-card {
+    display: inline-block; /* Asegura que tome el tamaño de su contenido */
+    position: relative; /* Necesario para la animación 3D */
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease; /* Duración de la animación */
+}
+
+.parallax-container {
+    position: relative;
+    overflow: hidden; /* Esconde el contenido que se desplaza fuera de la vista */
+}
+
+.parallax-item {
+    position: relative;
+    will-change: transform;
+    text-align: center; /* Centra el texto */
+    font-size: 2rem; /* Tamaño del texto */
+    color: white; /* Texto blanco */
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    padding: 2rem; /* Espaciado interno */
+    margin: 1rem 0; /* Espaciado entre elementos */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.swiper {
+    width: 90%;
+    height: 38rem;
+    --swiper-navigation-color: #FB923C; /* Cambiar a verde, por ejemplo */
+    --swiper-theme-color: #FB923C;
+}
+
+
+
+/* Alinear flechas */
+
+  .iframe1 {
+    width: 100%;
+    height: 32rem;
+    background-color: #f0f0f0;
+}
+
+.iframe2 {
+    
+    height: 32rem;
+    
+}
+
+/* Frente y reverso de la tarjeta */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%; /* Coinciden con el tamaño del contenedor */
+    height: 100%;
+    backface-visibility: hidden; /* Oculta la parte trasera */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Frente de la tarjeta */
+.flip-card-front {
+    background-color: transparent; /* Sin color, usa solo el contenido */
+}
+
+/* Reverso de la tarjeta */
+.flip-card-back {
+    background-color: #f0f0f0; /* Fondo opcional */
+    transform: rotateY(180deg);
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    border-radius: 8px; /* Opcional */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Hover para el efecto flip */
+.flip-container:hover .flip-card {
+    transform: rotateY(180deg);
+}
+
+/* Evita problemas de dimensiones */
+img {
+    display: block; /* Asegura que no se comporten como elementos inline */
+    width: auto; /* Mantiene proporciones */
+    height: auto; /* Mantiene proporciones */
+}
+
+/* Opcional: asegura que el tamaño mínimo respete las imágenes */
+.flip-card {
+    min-width: 100px; /* Cambia según tus necesidades */
+    min-height: 100px;
+}
+
 
 .image_hero2 {
     position: absolute;
@@ -68,10 +167,10 @@ transform: translateX(-50%);
     height: 350px;
     position: absolute;
     border-radius: 50%;
-    border-top: 3px solid rgba(69, 69, 69, 0);
-    border-bottom: 3px solid rgba(128, 128, 128, 0);
-    border-left: 3px solid white;
-    border-right: 3px solid white;
+    border-top: 4px solid rgba(69, 69, 69, 0);
+    border-bottom: 4px solid rgba(128, 128, 128, 0);
+    border-left: 4px solid orange;
+    border-right: 4px solid black;
     top: calc(50% - 185px); /* La mitad de la altura del círculo */
     left: calc(57% - 185px); /* La mitad del ancho del círculo */
 }
@@ -98,6 +197,54 @@ transform: translateX(-50%);
     opacity: 0;
     animation: fadeIn 5s ease forwards;
 }
+
+/* Animación de efecto hover cíclico */
+/* Animación de efecto hover gradual */
+@keyframes hoverEffect {
+    0% {
+      transform: translateY(0) ; /* Estado inicial */
+      background-color: #1c1b29; /* Color inicial */
+    }
+    
+    50% {
+      transform: translateY(-10px) ; /* Efecto hover */
+      background-color: #4b4b84; /* Color durante el "hover" */
+    }
+  
+    100% {
+      transform: translateY(0) ; /* Regresar al estado original */
+      background-color: #1c1b29; /* Regresar al color inicial */
+    }
+  }
+  
+  /* Aplicación de la animación en los divs */
+  .div-hover {
+    animation: hoverEffect 3s infinite ease-in-out;
+  }
+
+  @keyframes hoverEffect2 {
+    0% {
+      transform: translateY(0) ; /* Estado inicial */
+      background-color: #1c1b29; /* Color inicial */
+    }
+    
+    50% {
+      transform: translateY(10px) ; /* Efecto hover */
+      background-color: #4b4b84; /* Color durante el "hover" */
+    }
+  
+    100% {
+      transform: translateY(0) ; /* Regresar al estado original */
+      background-color: #1c1b29; /* Regresar al color inicial */
+    }
+  }
+  
+  /* Aplicación de la animación en los divs */
+  .div-hover2 {
+    animation: hoverEffect2 3s infinite ease-in-out;
+  }
+  
+  
 
 @keyframes fadeIn {
     to {
@@ -147,7 +294,7 @@ transform: translateX(-50%);
     cursor: pointer;
     position: fixed;
     top: 10px;
-    right: 70px;
+    right: 20px;
     transition: right 0.5s;
 }
 
@@ -205,6 +352,37 @@ transform: translateX(-50%);
 .fade-and-slide.active {
     width: 60px;
 }
+
+.fade-in-down {
+    animation: fadeInDown 0.3s ease-out forwards;
+}
+
+.fade-out-up {
+    animation: fadeOutUp 0.3s ease-in forwards;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
 
 @keyframes blink {
     0%, 100% {

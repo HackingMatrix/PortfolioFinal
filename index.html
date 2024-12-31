@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="output.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>/OmarCerpa_Portafolio/..</title>
 </head>
-<body class="bg-gradient-to-l from-gray-600 to-zinc-900 scroll-container">
+<body class="bg-zinc-700 scroll-container">
     <div class="scroll-content">
     <header id="home" class="pb-32">  
         <div id="bg-fixed" class=""></div>
@@ -49,22 +54,22 @@
     <div class="mr-5 mt-16 mb-20">
         <div class="flex justify-center fade-in-text">
         <a href="https://www.instagram.com/omarcerpafong/" target="_blank"><img src="images/insta_logo.png" alt="instagram_logo" class="w-9"></a>
-        <a href="https://github.com/HackingMatri" target="_blank"><img src="images/github_logo.png" alt="github_logo" class="w-9 mr-14 ml-16"></a>
+        <a href="https://github.com/HackingMatrix" target="_blank"><img src="images/github_logo.png" alt="github_logo" class="w-9 mr-14 ml-16"></a>
         <a href="https://wa.me/524771394139" target="_blank"><img src="images/whatsapp_1384023.png" alt="whatsapp_logo" class="w-8 h-8 mt-0.5 mr-14"></a>
         <a href="https://www.linkedin.com/in/omar-cerpa-21946911a/" target="_blank"><img src="images/linkedin-logo.png" alt="whatsapp_logo" class="w-8 h-8 mt-0.5"></a>
         </div>
     </div>
-    <hr >
-    <div id="about" class="grid justify-center">
-    <span class="text-3xl font-semibold text-white mb-2 pt-2">ABOUT</span>
+    
+    <div id="about" class="flex justify-center">
+    <span class="text-3xl font-semibold text-white mt-28 pt-2">ABOUT</span>
     </div>
-    <section id="about" class="max-sm:grid-cols-1 grid grid-cols-2 justify-items-center items-center py-24 px-10 bg-gradient-to-l from-gray-500 to-zinc-800  justify-evenly">
-        <div class="relative">
-          <img src="images/yo3.png" alt="robot" class="image_hero fade-in-up ">
+    <section class="lg:flex-row  px-10 lg:justify-around flex flex-col justify-items-center items-center mb-48">
+        <div class="relative flex justify-center items-center">
+          <img src="images/yo3.png" alt="robot" class="image_hero fade-in-up">
         <div class="spinAnimate"></div>  
         </div>
         
-        <div class="grid justify-items-center fade-in-text sm:pl-20 xl:pl-60 3xl:pl-80 3xl:pr-10 text-justify">
+        <div class=" w-96 py-10 fade-in-text text-justify">
             <p class="my-10 text-white text-lg">I am a graduate in design with a three year full stack development career. I have 4 years of experience in shaping my skills as a programmer and UX/UI specialist. During these years, I've had the opportunity to take various courses. Furthermore, I continuously engage in self-learning to enhance my knowledge and abilities.
 
                 What truly excites me is problem-solving through technology and design. I am passionate about how my skills and creativity can contribute to crafting solutions for others, always seeking innovative ways to add value through my projects.
@@ -75,149 +80,710 @@
             <button type="submit" class="w-26 shadow-lg border-2 border-orange-400 bg-white text-sm text-orange-400 px-4 py-2 rounded-md hover:bg-slate-700">Read More</button></a>
         </div>
     </section>
-    <hr >
-    <div id="skills" class="flex justify-around">
-    <span class="text-3xl font-semibold text-white mb-2 pt-2">SKILLS</span>
-    <span class="text-3xl font-semibold text-white mb-2 pt-2">SERVICES</span>
-    </div>
+
+    <div id="about" class="px-20 mb-24">
+        <span class="text-3xl font-semibold text-white mt-28 pt-2">SKILLS</span>
+        </div>
+    <div class="flex flex-wrap  px-20 pt-3 pb-3 items-center mb-36">
+     
+           <!-- HTML5 -->
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/HTML5_logo_and_wordmark.svg.png" alt="html_logo" class="w-28 px-1">
+                </div>
+                <div class="flip-card-back">
+                    <p>HTML5</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CSS -->
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/css-logo.png" alt="css-logo" class="w-20 px-1">
+                </div>
+                <div class="flip-card-back">
+                    <p>CSS3</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/javascript-logo.png" alt="javascript-logo" class="w-20 px-1">
+                </div>
+                <div class="flip-card-back">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+        </div>
+
+   
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/Bootstrap_logo.svg" alt="Bootstrap_logo" class="w-28 px-1">
+                </div>
+                <div class="flip-card-back">
+                    Bootstrap
+                </div>
+            </div>
+        </div>
     
-    <div class="max-sm:grid-cols-1  justify-items-center sm:grid-cols-1 max-sm:px-4 xl:flex xl:px-10  px-20 pt-3 pb-3 bg-gradient-to-l from-gray-500 to-zinc-800 xl:pb-14">
-        <div class="max-sm:grid-cols-1 sm:grid-cols-1 xl:mr-7 2xl:pl-24 3xl:pl-52 3xl:mr-64 justify-center flex">
-        <div class="max-sm:px-3 px-7 py-16">
-            <div class="pb-14">
-            <img src="images/html.png" alt="html_logo" class="max-sm:w-14 w-20">
-            <span class="max-sm:pr-8 pr-24 mr-1 text-xs text-slate-500">Lvl. 0</span><span class="max-sm: text-slate-500 text-xs">Lvl. <span class="text-sm">∞</span></span>
-            <div class="h-3 max-sm:w-24 w-40 border-2 rounded xl:border-slate-600 max-xl:border-neutral-400">
-            <div class="h-2 bg-orange-500 rounded fade-and-slide" data-final-width="140"></div>
-            </div >
-            </div>
-            <div class="pb-14">
-            <img src="images/css-logo.png" alt="css-logo" class="w-10">
-            <span class="max-sm:pr-8 pr-24 mr-1 text-xs text-slate-500">Lvl. 0</span><span class=" text-slate-500 text-xs">Lvl. <span class="text-sm">∞</span></span>
-            <div class="h-3 max-sm:w-24 w-40 border-2 rounded xl:border-slate-600 max-xl:border-neutral-400">
-            <div class="h-2 bg-blue-700 rounded fade-and-slide" data-final-width="130"></div>
-            </div>
-            </div>
-            <div class="pb-14">
-            <img src="images/javascript-logo.png" alt="javascript-logo" class="max-sm:w-10 w-14">
-            <span class="max-sm:pr-8 pr-24 mr-1 text-xs text-slate-500">Lvl. 0</span><span class="text-slate-500 text-xs">Lvl. <span class="text-sm">∞</span></span>
-            <div class="h-3 max-sm:w-24 w-40 border-2 rounded xl:border-slate-600 max-xl:border-neutral-400">
-            <div class="h-2 bg-yellow-300 rounded fade-and-slide" data-final-width="130"></div>
-            </div>
-            </div>
-        </div>
-        <div class="max-sm:px-3 px-7 py-8">
-            <div class="pb-14">
-            <img src="images/Bootstrap_logo.svg" alt="Bootstrap_logo" class="max-sm:w-12 w-14 pb-3 pt-2">
-            <span class="max-sm:pr-8 pr-24 mr-1 text-xs text-slate-500">Lvl. 0</span><span class="text-slate-500 text-xs">Lvl. <span class="text-sm">∞</span></span>
-            <div class="h-3 max-sm:w-24 w-40 border-2 rounded xl:border-slate-600 max-xl:border-neutral-400">
-            <div class="h-2 bg-violet-600 rounded fade-and-slide" data-final-width="120"></div>
-            </div>
-            </div>
-            <div class="pb-14">
-                <img src="images/Tailwind CSS.png" alt="tailwindcss-logo" class="max-sm:w-12 w-16">
-                <span class="max-sm:pr-8 pr-24 mr-1 text-xs text-slate-500">Lvl. 0</span><span class="text-slate-500 text-xs">Lvl. <span class="text-sm">∞</span></span>
-                <div class="h-3 max-sm:w-24 w-40 border-2 rounded xl:border-slate-600 max-xl:border-neutral-400">
-                <div class="h-2 bg-teal-400 rounded fade-and-slide" data-final-width="140"></div>
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/Tailwind CSS.png" alt="tailwindcss-logo" class="w-28 px-1">
                 </div>
+                <div class="flip-card-back">
+                    Tailwind CSS
                 </div>
-            <div class="pb-14">
-            <img src="images/react-logo.png" alt="react-logo" class="max-sm:w-12 w-16">
-            <span class="max-sm:pr-8 pr-24 mr-1 text-xs text-slate-500">Lvl. 0</span><span class="text-slate-500 text-xs">Lvl. <span class="text-sm">∞</span></span>
-            <div class="h-3 max-sm:w-24 w-40 border-2 rounded xl:border-slate-600 max-xl:border-neutral-400">
-            <div class="h-2 bg-cyan-400 rounded fade-and-slide" data-final-width="120"></div>
-            </div>
-            </div>
-            <img src="images/react_native.png" alt="react_native_logo" class="max-sm:w-12 w-16">
-            <span class="max-sm:pr-8 pr-24 mr-1 text-xs text-slate-500">Lvl. 0</span><span class="text-slate-500 text-xs">Lvl. <span class="text-sm">∞</span></span>
-            <div class="h-3 max-sm:w-24 w-40 border-2 rounded xl:border-slate-600 max-xl:border-neutral-400">
-            <div class="h-2 bg-sky-800 rounded fade-and-slide" data-final-width="140"></div>
             </div>
         </div>
-        <div class="max-sm:px-3 px-7 py-8">
-            <div class="pb-10 mb-0.5">
-            <img src="images/WordPress-logotype-wmark.png" alt="wordpress-logo" class="max-sm:w-14 w-16">
-            <span class="max-sm:pr-8 pr-24 mr-1 text-xs text-slate-500">Lvl. 0</span><span class="text-slate-500 text-xs">Lvl. <span class="text-sm">∞</span></span>
-            <div class="h-3 max-sm:w-24 w-40 border-2 rounded xl:border-slate-600 max-xl:border-neutral-400">
-            <div class="h-2 bg-white rounded fade-and-slide" data-final-width="145"></div>
-            </div>
-            </div>
-            <div class="pb-14 mb-2">
-            <img src="images/flutter_logo_470e9f7491.png" alt="flutter-logo" class="max-sm:w-12 w-14">
-            <span class="max-sm:pr-8 pr-24 mr-1 text-xs text-slate-500">Lvl. 0</span><span class="text-slate-500 text-xs">Lvl. <span class="text-sm">∞</span></span>
-            <div class="h-3 max-sm:w-24 w-40 border-2 rounded xl:border-slate-600 max-xl:border-neutral-400">
-            <div class="h-2 bg-sky-600 rounded fade-and-slide" data-final-width="85"></div>
-            </div>
-            </div>
-            <div class="pb-14 mb-2">
-            <img src="images/ff_logo_small.png" alt="ff-logo" class="max-sm:w-10 w-14">
-            <span class="max-sm:pr-8 pr-24 mr-1 text-xs text-slate-500">Lvl. 0</span><span class="text-slate-500 text-xs">Lvl. <span class="text-sm">∞</span></span>
-            <div class="h-3 max-sm:w-24 w-40 border-2 rounded xl:border-slate-600 max-xl:border-neutral-400">
-            <div class="h-2 bg-indigo-600 rounded fade-and-slide" data-final-width="100"></div>
-            </div>
-            </div>
-            <img src="images/Dart-logo.png" alt="Dart-logo" class="max-sm:w-10 w-14">
-            <span class="max-sm:pr-8 pr-24 mr-1 text-xs text-slate-500">Lvl. 0</span><span class="text-slate-500 text-xs">Lvl. <span class="text-sm">∞</span></span>
-            <div class="h-3 max-sm:w-24 w-40 border-2 rounded xl:border-slate-600 max-xl:border-neutral-400">
-            <div class="h-2 bg-emerald-300 rounded fade-and-slide" data-final-width="85"></div>
-            
+    
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/react-logo.png" alt="react-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    React
+                </div>
             </div>
         </div>
+    
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/react_native.png" alt="react_native_logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    React Native
+                </div>
+            </div>
         </div>
-        <section class="max-xl:pb-32  xl:pt-8 xl:px-24 2xl:pl-30 hola:pl-52 xl:w-full">
-            <div class="transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-y-100 hover:bg-indigo-500 duration-300 bg-center h-32 grid content-center border-2 border-orange-400 rounded text-center sm:ml-14 sm:mr-14 xl:mr-0 mt-10 backgroundDev">
+    
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/WordPress-logotype-wmark.png" alt="wordpress-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    WordPress
+                </div>
+            </div>
+        </div>
+    
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/flutter_logo_470e9f7491.png" alt="flutter-logo" class="w-24">
+                </div>
+                <div class="flip-card-back">
+                    Flutter
+                </div>
+            </div>
+        </div>
+    
+        <!-- Repite este patrón para cada logo -->
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/Dart-logo.png" alt="Dart-logo" class="w-24">
+                </div>
+                <div class="flip-card-back">
+                    Dart
+                </div>
+            </div>
+        </div>
+    
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/Kotlin_Icon.png" alt="kotlin-logo" class="w-24 px-2">
+                </div>
+                <div class="flip-card-back">
+                    Kotlin
+                </div>
+            </div>
+        </div>
+    
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/Blazor.png" alt="Blazor-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Blazor
+                </div>
+            </div>
+        </div>
+    
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/clickup.png" alt="clickup-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    ClickUp
+                </div>
+            </div>
+        </div>
+    
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/docker-logo2.png" alt="docker-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Docker
+                </div>
+            </div>
+        </div>
+    
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/Firebase-logo-02.png" alt="firebase-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Firebase
+                </div>
+            </div>
+        </div>
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/Electron_Software_Framework_Logo.svg" alt="electron-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Electron
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/Angular_full_color_logo.svg.png" alt="angular-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Angular
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/git-logo.png" alt="git-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Git
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/github-logo.png" alt="github-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    GitHub
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/gitlab-logo2.webp" alt="gitlab-logo2" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    GitLab
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/swift-logo.png" alt="swift-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Swift
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/sqlite_logo_icon_169724.webp" alt="sqlite-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    SQLite
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/postgresql-logo.png" alt="postgresql-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    PostgreSQL
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/mysql-logo.png" alt="mysql-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    MySQL
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/mongodb-logo.png" alt="mongo-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    MongoDB
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/nexus-repo-logo.png" alt="nexus-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Nexus
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/Netlify_logo.svg.png" alt="netlify-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Netlify
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="supabase-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Supabase
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/terraform-logo.png" alt="terraform-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Terraform
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/scrum-logo-B057CBD9B8-seeklogo.com.png" alt="scrum-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Scrum
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/django-logo.png" alt="django-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Django
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/java-logo-black-and-white-1.png" alt="java-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Java
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/mapbox-logo.png" alt="mapbox-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Mapbox
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/hostgator_logo_icon_170996.webp" alt="hostgator-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    HostGator
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/figma-logo-512.webp" alt="figma-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Figma
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/c--4-logo.svg" alt="csharp-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    C#
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/whatsapp-business-logo.png" alt="whatsapp-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    WhatsApp Business
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/mailchimp-logo.png" alt="mailchimp-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Mailchimp
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/Paypal_2014_logo.png" alt="paypal-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    PayPal
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/Stripe-Logo-500x281.png" alt="stripe-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    Stripe
+                </div>
+            </div>
+        </div>
+        
+        <div class="flip-container">
+            <div class="flip-card">
+                <div class="flip-card-front">
+                    <img src="images/ChatGPT-Logo.svg.png" alt="chatgpt-logo" class="w-28">
+                </div>
+                <div class="flip-card-back">
+                    ChatGPT
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <div id="about" class="px-20 mb-5 mt-11 flex justify-center">
+            <span class="text-xl font-semibold text-white mt-28 pt-2">CHARGES</span>
+            </div>
+        <section class="max-xl:pb-32  xl:pt-8 xl:px-24  xl:w-full pb-10 px-11">
+            <div class="transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-y-100 hover:bg-indigo-500 duration-300 bg-center h-32 grid content-center border-2 border-orange-400 rounded text-center xl:mr-0 mt-10 backgroundDev div-hover">
             <span class="text-5xl my-11 text-white font-semibold">Full Stack Developer</span>
             </div>
-            <div class="transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-y-100 hover:bg-indigo-500 duration-300 bg-center h-32 grid content-center backgroundDesn border-2 border-orange-400 rounded text-center sm:ml-14 sm:mr-14 xl:mr-0  mt-16"><span class="text-5xl text-white font-semibold">Web Designer</span></div>
-            <div class="transition ease-in-out delay-0 backgroundMobile hover:-translate-y-1 hover:scale-y-100 hover:bg-indigo-500 duration-300 bg-center h-32 grid content-center border-2 border-orange-400 rounded text-center sm:ml-14 sm:mr-14 xl:mr-0  mt-16"><span class="text-5xl text-white font-semibold">Mobile Architect</span><p class="pt-3"></p> </div>
+            <div class="transition ease-in-out delay-0   duration-300 bg-center h-32 grid content-center backgroundDesn border-2 border-orange-400 rounded text-center xl:mr-0  mt-16"><span class="text-5xl text-white font-semibold">Web Designer</span></div>
+            <div class="transition ease-in-out delay-0 backgroundMobile hover:-translate-y-1 hover:scale-y-100 hover:bg-indigo-500 duration-300 bg-center h-32 grid content-center border-2 border-orange-400 rounded text-center xl:mr-0  mt-16 div-hover2"><span class="text-5xl text-white font-semibold">Mobile Architect</span><p class="pt-3"></p> </div>
         </section>
     </div>
-    <hr >
-    <div id="proyectos" class="flex justify-around">
-    <span class="text-3xl font-semibold text-white mb-2 pt-2">PROJECTS</span>
-    </div>
-    <div id="proyectos" class="pt-20 sm:pb-11 py-7 px-10 bg-gradient-to-l from-gray-500 to-zinc-800 items-stretch max-sm:grid-cols-1 max-sm:justify-items-center sm:flex justify-evenly">
-   
-        <div class="grid justify-items-center">
-            <a href="https://drive.google.com/file/d/1-ccr_kJUQlwIgFwcTNn7a-l3KhDWM9XG/view?usp=sharing">
-           <img src="images/Captura de pantalla (1).png" alt="website1" class="transition ease-in-out hover:opacity-60 my-5 w-80 h-72"></a>
-           <span class="pb-10 text-indigo-200 font-semibold text-xl">Mobile development in Flutter</span> 
-        
-            <a href="https://vitalmg.com/probono/">
-            <img src="images/vital.png" alt="website1" class="transition ease-in-out hover:opacity-60 my-5 w-60 h-72"></a> 
-            <span class="pb-10 text-indigo-200 font-semibold text-xl">Web Design for Vital Marketing</span> 
-        
-            
-         </div>
-    
-    
-        <div class="grid justify-items-center">
-            
-        
-            <div>
-            <img src="images/app viajes.png" alt="website1" class="max-md:w-64 my-5 w-96 h-60"> 
-            <span class="text-indigo-200 font-semibold text-xl flex justify-center">Concept design for travel app</span>
-            </div> 
-       
-            <div>
-            <img src="images/proyecto3.png" alt="website1" class="my-5 w-72 h-60">
-            <span class="text-indigo-200 font-semibold text-xl flex justify-center">Concept design for AI page</span>
-            </div>  
-       </div>
-    
 
+    <h2 class="text-2xl font-semibold text-center mt-60 mb-30 text-white">MAIN PROJECTS</h2>
+
+    <!-- Slider main container -->
+    <div class="swiper py-16 px-8 text-white mt-14">
+        
+        <!-- Wrapper para Swiper -->
+        <div class="swiper-wrapper ">
+          <!-- Slide 1 -->
+          <div class="swiper-slide flex flex-col h-full items-center">
+
+
+           
+            <!-- Contenedor del iframe -->
+            <div class="flex-grow">
+              <iframe 
+                src="https://cestlavie-spa.com/" 
+                class="iframe1 rounded-lg" 
+                allowfullscreen>
+              </iframe>
+            </div>
+
+             <!-- Texto del proyecto -->
+             <div class="mb-4 flex justify-center pt-2">
+                <h3 class="text-xl font-semibold">CRM Spa C'est la vie</h3>
+               
+              </div>
+            
+             <!-- Texto del proyecto -->
+             
+             <div id="text-rotator-1" class="text-rotator relative h-10 overflow-hidden text-gray-400 text-center mt-4">
+                <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">CRM system and landing page for efficient spa management.</p>
+                <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Allows reservations with a mandatory initial deposit.</p>
+                <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Integration with Stripe for secure and fast payments.</p>
+                <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Email notifications for both clients and administrators.</p>
+            </div>
+            
+              
+          </div>
+          
+      
+          <!-- Slide 2 -->
+          <div class="swiper-slide flex flex-col items-center bg-black rounded-lg pt-2">
+            
+            <!-- Video -->
+            <video 
+            src="videos/PaddleReservationApp.mp4" 
+            class="w-full iframe2 rounded-lg " 
+            autoplay 
+            loop 
+            muted 
+            playsinline>
+            Tu navegador no soporta la reproducción de video.
+        </video>
+        <div class="flex justify-center">
+            <h3 class="text-xl font-semibold">Easy Grip</h3>
+        </div>
+            <!-- Descripción -->
+            <div id="text-rotator-2" class="text-rotator relative h-10 overflow-hidden text-gray-400 text-center mt-4">
+                <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Cross-platform application developed with Flutter.</p>
+                <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Complete management of padel court reservations.</p>
+                <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">API hosted on AWS for player and reservation logic.</p>
+                <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">PostgreSQL database, managed with Supabase.</p>
+                <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Currently in testing phase for Google Play and Apple Store.</p>
+            </div>
+          </div>
+          
+      
+          <!-- Slide 3 -->
+          <div class="swiper-slide flex flex-col items-center bg-black rounded-lg pt-2">
+         
+          <!-- Video -->
+          <video 
+          src="videos/ExpenseTracker.mp4" 
+          class="w-full iframe2 rounded-lg" 
+          autoplay 
+          loop 
+          muted 
+          playsinline>
+          Tu navegador no soporta la reproducción de video.
+      </video>
+      <div class="flex justify-center">
+        <h3 class="text-xl font-semibold">ExpenseTracker</h3>
     </div>
-    <div class=" sm:pb-16 bg-gradient-to-l from-gray-500 to-zinc-800 grid justify-items-center">
-        <a href="https://drive.google.com/file/d/1iqtMY9QqjKkxa_IrisC9q1c7gaj02fG6/view?usp=sharing"><img src="images/NTF.png" alt="website1" class="transition ease-in-out hover:opacity-60 my-5 max-sm:w-96  h-60"></a>
+          <!-- Descripción -->
+          <div id="text-rotator-3" class="text-rotator relative h-10 overflow-hidden text-gray-400 text-center mt-4">
+            <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">App to register and track monthly expenses.</p>
+            <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Developed with Jetpack Compose and local SQL.</p>
+            <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Includes an API to get monthly saving tips.</p>
+            <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Helps maintain a healthy balance between income and expenses.</p>
+        </div>
+        </div>
+
+        <div class="swiper-slide flex flex-col items-center bg-black rounded-lg pt-2">
+
+          <!-- Video -->
+          <video 
+          src="videos/easyFood.mp4" 
+          class="w-full iframe2 rounded-lg" 
+          autoplay 
+          loop 
+          muted 
+          playsinline>
+          Tu navegador no soporta la reproducción de video.
+      </video>
+      <div class="flex justify-center">
+        <h3 class="text-xl font-semibold">SmartEats</h3>
+    </div>
+          <!-- Descripción -->
+          <div id="text-rotator-4" class="text-rotator relative h-10 overflow-hidden text-gray-400 text-center mt-4">
+            <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Cross-platform application created with React Native.</p>
+            <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Designed for companies offering personalized nutrition plans.</p>
+            <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Includes database and API for managing users and orders.</p>
+            <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Complete solution for delivering food based on specific diets.</p>
+        </div>
+        </div>
+
+        <div class="swiper-slide flex flex-col items-center  rounded-lg">
+            
+          <!-- Video -->
+          <video 
+          src="videos/DaySwiper.mp4" 
+          class="w-full iframe2 rounded-lg" 
+          autoplay 
+          loop 
+          muted 
+          playsinline>
+          Tu navegador no soporta la reproducción de video.
+      </video>
+      <div class="flex justify-center pt-3">
+        <h3 class="text-xl font-semibold">Electron Software</h3>
+    </div>
+           <!-- Texto del proyecto -->
+             
+           <div id="text-rotator-5" class="text-rotator relative h-10 overflow-hidden text-gray-400 text-center mt-4 md:text-lg text-sm">
+            <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Intuitive software to navigate through days of the calendar.</p>
+        <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Allows adding lists with title, description, and time for each day.</p>
+        <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">Developed with Electron and Better SQLite database.</p>
+        <p class="absolute top-0 left-0 w-full transition-opacity duration-500 opacity-0">macOS version in development.</p>
+        </div>
+        
+        </div>
+        </div>
+      
+        <!-- Paginación -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- Botones de navegación -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div id="about" class="px-20 mb-5 mt-60 flex justify-center">
+        <span class="text-3xl font-semibold text-white mt-28 pt-2">Studies and Certifications</span>
+      </div>
+      
+      <section class="max-xl:pb-32 xl:pt-8 xl:px-24 2xl:pl-30 hola:pl-52 xl:w-full pb-10 px-10">
+        <!-- Lista de elementos interactivos -->
+        <ul class="space-y-4">
+          <li class="bg-gray-600 p-4 rounded-lg text-white">
+            <button class="w-full text-left flex items-center justify-between" onclick="toggleList('certificados')">
+              <span>Development</span>
+              <span id="certificados-plus" class="text-xl">+</span>
+            </button>
+            <ul id="certificados" class="hidden pl-6 mt-2 space-y-2 text-sm text-gray-400">
+                <li>- JavaScript Course
+                    CoderhouseCoderhouse
+                    Issued: Jan. 2023, Skills: Design patterns · JavaScript · Object-oriented programming · Functional programming · Reactive programming · Web programming · Advanced web programming · Basic web programming · Intermediate web programming · Professional web programming · Responsive web programming · Secure web programming · Semantic web programming
+                <img src="images/1698097988029.jpeg" alt="" class="w-64"></li>
+                
+            </li>
+              <li>- React Js Course
+                Coderhouse
+                Issued: Jan. 2023, Skills: React.js · Redux · React Hooks · React Router · React Context · React Testing Library · Jest · React Native · Next.js · Gatsby · Material-UI · Chakra UI · Styled Components · Emotion · Framer Motion · Storybook · React Query · Recoil · Formik · Yup · Axios · GraphQL · Apollo Client · Firebase · Netlify · Vercel · Heroku · Docker · GitHub Actions · AWS · Azure · Google Cloud Platform · Serverless · Jamstack · PWA · SEO · Webpack · Babel · ESLint · Prettier · Husky · Lighthouse · Web Vitals · Progressive Web Apps · Server-side rendering · Static site generation · Incremental Static Regeneration · Serverless functions · API routes · WebSockets · WebRTC · Web Workers · IndexedDB · Service Workers · Local Storage · Cookies · JWT · OAuth · OpenID Connect · REST · GraphQL · gRPC
+                <img src="images/1698106303369.jpeg" alt="" class="w-64"></li>
+                
+            </li>
+              <li>- Web Development Course
+                Coderhouse
+                Issued: Jan. 2022, Skills: CSS · HTML5 · SASS · JavaScript · React · Node.js · Express.js · MongoDB · Firebase · Git · GitHub · Scrum · Agile Methodologies · Web Design · Responsive Design · UX/UI · Figma · Adobe XD · Adobe Illustrator · Adobe Photoshop
+                <img src="images/1698097869988.jpeg" alt="" class="w-64"></li>
+            </li>
+            </ul>
+          </li>
+      
+          <li class="bg-gray-600 p-4 rounded-lg text-white">
+            <button class="w-full text-left flex items-center justify-between" onclick="toggleList('experiencia')">
+              <span>UX/UI</span>
+              <span id="experiencia-plus" class="text-xl">+</span>
+            </button>
+            <ul id="experiencia" class="hidden pl-6 mt-2 space-y-2 text-sm text-gray-400">
+              <li>- Web & Mobile Designer in 2023: UI/UX, Figma
+                <img src="images/ztm_academy_logo.jpeg" alt="">
+              </li>
+            </ul>
+          </li>
+      
+          <li class="bg-gray-600 p-4 rounded-lg text-white">
+            <button class="w-full text-left flex items-center justify-between" onclick="toggleList('proyectos')">
+              <span>Academic</span>
+              <span id="proyectos-plus" class="text-xl">+</span>
+            </button>
+            <ul id="proyectos" class="hidden pl-6 mt-2 space-y-2 text-sm text-gray-400">
+              <li>- La Salle Bajío University
+                Bachelor's Degree, Industrial and Product Design
+                Aug. 2016 - Jun. 2020
+                <img src="images/Logo_de_la_Universidad_La_Salle_sin_letras.svg" alt="" class="w-32">
+            </li>
+              <li>- La Salle Bajío University
+                Master's Degree, Computer Programming, Specific Applications
+                <img src="images/Logo_de_la_Universidad_La_Salle_sin_letras.svg" alt="" class="w-32">
+            </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      
     
-            <span class="pb-10 text-indigo-200 font-semibold text-xl">Web Dev for an music projects (first project)</span>
-        </div>  
-    <hr >
-    <div id="contact" class="flex justify-around">
-    <span class="text-3xl font-semibold text-white mb-2 pt-2">INTERESTED?</span>
-    </div>
-    <section id="contact" class="grid py-64 justify-items-center bg-gradient-to-l from-gray-500 to-zinc-800">
+    <section id="contact" class="grid py-64 justify-items-center">
         <span class="text-5xl text-gray-200 font-semibold mb-16">Contact <span class="text-orange-400"> Me!</span></span>
+        <div class="mr-5 mt-16 mb-20">
+            <div class="flex justify-center fade-in-text">
+            <a href="https://www.instagram.com/omarcerpafong/" target="_blank"><img src="images/insta_logo.png" alt="instagram_logo" class="w-9"></a>
+            <a href="https://github.com/HackingMatrix" target="_blank"><img src="images/github_logo.png" alt="github_logo" class="w-9 mr-14 ml-16"></a>
+            <a href="https://wa.me/524771394139" target="_blank"><img src="images/whatsapp_1384023.png" alt="whatsapp_logo" class="w-8 h-8 mt-0.5 mr-14"></a>
+            <a href="https://www.linkedin.com/in/omar-cerpa-21946911a/" target="_blank"><img src="images/linkedin-logo.png" alt="whatsapp_logo" class="w-8 h-8 mt-0.5"></a>
+            </div>
+        </div>
+        <div class="flex justify-center mb-32 text-white">
+            <h1 class="text-2xl">Or</h1>
+        </div>
         <form class=" w-3/6" action="procesar_formulario.php" method="POST">
             <div class=" grid grid-cols-1 gap-2 md:grid-cols-2">
             <label for="nombre" class="sr-only">Full Name</label>
@@ -246,6 +812,8 @@
         <p>All Rights Reserved &copy; 2023</p>
     </footer>
 </div>
+
+
 <script src="scripts.js"></script>
 </body>
 </html>

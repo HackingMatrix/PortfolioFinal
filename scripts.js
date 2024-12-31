@@ -1,3 +1,24 @@
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
 const animado = document.getElementById('skills')
 
 window.addEventListener("scroll", () => {
@@ -40,33 +61,34 @@ menuToggle.addEventListener("click", () => {
     if (window.innerWidth <= 1200) {
         menuToggle.classList.toggle("vertical");
         if (verticalVisible) {
-        const backgroundFixedNav = `fixed right-0 bg-orange-400 h-full w-40 fade-in-left-bar z-20`
-        const customContent = `
+            const backgroundFixedNav = `fixed  w-full fade-in-down z-20 py-6`; // Eliminamos h-80 y agregamos py-6 para padding dinámico
+            const customContent = `
                 <div class="relative ">
-                <div class="fixed top-0 right-0 z-20">
-                <ul class="absolute grid justify-items-center top-20 right-9">
-                    <li class=" fade-in-left-menu text-white"><a href="#home">HOME</a></li>
-                    <li class=" pt-10 fade-in-left-menu text-white"><a href="#about">ABOUT</a></li>
-                    <li class=" pt-10 fade-in-left-menu text-white"><a href="#skills">SKILLS</a></li>
-                    <li class=" pt-10 fade-in-left-menu text-white"><a href="#contact">CONTACT</a></li>
-                    <li class=" pt-10 fade-in-left-menu text-white"><a href="#proyectos">PROYECTOS</a></li>
-                </ul>
+                    <div class="fixed top-0 z-20 w-full bg-orange-400 fade-in-down py-6">
+                        <ul class="flex flex-col items-center justify-center space-y-6">
+                            <li class="fade-in-left-menu text-white"><a href="#home">HOME</a></li>
+                            <li class="fade-in-left-menu text-white"><a href="#about">ABOUT</a></li>
+                            <li class="fade-in-left-menu text-white"><a href="#skills">SKILLS</a></li>
+                            <li class="fade-in-left-menu text-white"><a href="#contact">CONTACT</a></li>
+                            <li class="fade-in-left-menu text-white"><a href="#proyectos">PROYECTOS</a></li>
+                        </ul>
+                    </div>
                 </div>
-                </div>
-        `;
-        menuVertical.innerHTML = customContent;
-        backgroundFixed.className = backgroundFixedNav;
+            `;
+            menuVertical.innerHTML = customContent;
+            backgroundFixed.className = backgroundFixedNav;
+            
     } else {
-        const backgroundFixedNav = `fixed right-0 bg-orange-400 h-full w-40 fade-out z-20`
+        const backgroundFixedNav = `fixed w-full fade-out-up z-20 py-6`;
         const customContent = `
                 <div class="relative ">
-                <div class="fixed top-0 right-0 z-20">
-                <ul class="absolute grid justify-items-center top-20 right-9">
+                <div class="fixed top-0 z-20 w-full bg-orange-400 fade-out-up py-6">
+                <ul class="flex flex-col items-center justify-center space-y-6">
                     <li class=" fade-out text-white"><a href="#home">HOME</a></li>
-                    <li class=" pt-10 fade-out text-white"><a href="#about">ABOUT</a></li>
-                    <li class=" pt-10 fade-out text-white"><a href="#skills">SKILLS</a></li>
-                    <li class=" pt-10 fade-out text-white"><a href="#contact">CONTACT</a></li>
-                    <li class=" pt-10 fade-out text-white"><a href="#proyectos">PROYECTOS</a></li>
+                    <li class=" fade-out text-white"><a href="#about">ABOUT</a></li>
+                    <li class=" fade-out text-white"><a href="#skills">SKILLS</a></li>
+                    <li class=" fade-out text-white"><a href="#contact">CONTACT</a></li>
+                    <li class=" fade-out text-white"><a href="#proyectos">PROYECTOS</a></li>
                 </ul>
                 </div>
                 </div>
@@ -87,7 +109,7 @@ menuToggle.addEventListener("click", () => {
     if(window.innerWidth >= 1200) {
         menuToggle.classList.toggle("moved");
         if (isTextVisible) {
-        const backgroundFixedNav = `fixed bg-gray-600 height_fixed w-screen fade-in-left-bar z-10`
+        const backgroundFixedNav = `fixed bg-orange-400 height_fixed w-screen fade-in-left-bar z-10`
         const customContent = `
                 <div class="relative ">
                 <div class="fixed top-3 right-16 z-20">
@@ -154,3 +176,55 @@ function handleScroll() {
 
 // Agrega un oyente de eventos de desplazamiento
 window.addEventListener('scroll', handleScroll);
+
+document.addEventListener("scroll", () => {
+    const parallaxItems = document.querySelectorAll(".parallax-item");
+
+    parallaxItems.forEach((item) => {
+        const speed = parseFloat(item.getAttribute("data-speed"));
+        const offset = window.scrollY * speed;
+        item.style.transform = `translateY(${offset}px)`;
+    });
+});
+
+const rotators = document.querySelectorAll('.text-rotator');
+
+rotators.forEach(rotator => {
+    const texts = rotator.querySelectorAll('p');
+    let currentIndex = 0;
+
+    function rotateText() {
+        // Ocultar todos los textos del rotador actual
+        texts.forEach((text) => {
+            text.classList.add('opacity-0');  // Ocultar texto
+            text.classList.remove('opacity-100'); // Asegurarse de quitar cualquier visibilidad
+        });
+
+        // Mostrar el texto actual
+        texts[currentIndex].classList.remove('opacity-0');
+        texts[currentIndex].classList.add('opacity-100');
+
+        // Pasar al siguiente texto
+        currentIndex = (currentIndex + 1) % texts.length;
+    }
+
+    // Inicializar rotación para este rotador
+    rotateText();
+    setInterval(rotateText, 4000); // Cambiar texto cada 3 segundos
+});
+
+function toggleList(id) {
+    // Obtener el elemento de la lista y el botón
+    const list = document.getElementById(id);
+    const button = document.getElementById(id + '-plus');
+    
+    // Alternar la visibilidad de la lista
+    list.classList.toggle('hidden');
+    
+    // Cambiar el ícono del botón de "+" a "-" o viceversa
+    if (list.classList.contains('hidden')) {
+      button.textContent = '+';
+    } else {
+      button.textContent = '-';
+    }
+  }
